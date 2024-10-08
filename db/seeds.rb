@@ -16,12 +16,12 @@ student = Student.create(
 )
 
 20.times do |i|
-  puts 'Creating student #{i+1}'
+  puts "Creating student #{i+1}"
 
-Student.create(
-  first_name: 'Student #{i+1}',
-  last_name: 'Lname #{i+1}',
-  email: 'student#{i+1}@daankwa.com',
-)  
-
+  Student.create(
+    first_name: "Student #{i+1}",
+    last_name: "Lname #{i+1}",
+    email: "student#{i+1}@daankwa.com",
+    phone_number: "123123123#{i+1}"  # Optional: generate unique phone numbers
+  )
 end
